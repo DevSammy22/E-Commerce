@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - E_Commerce</title>
+    
+    <link rel="stylesheet" href ="~/css/style.css"/>
+</head>
+<body>
+    <header>
+         <section id="toppanel" class="flex enusd">
+            <div>
+                <span>EN</span>
+                <img src="Images/arrow-down-sign-to-navigate.png" width="7" alt="">
+                <span>USD</span>
+                <img src="Images/arrow-down-sign-to-navigate.png" width = "7" alt="">
+            </div>
+            <div>
+                <ul id= "home-list1">
+                    <li>
+                        <a href="#">
+                            <img src="./Images/profile_close_2.png" alt="" width="17">
+                        </a>
+                    </li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#"><img src="./Images/shopping-cart.png" width="19" alt=""></a> </li>
+                    <li> <a href="#">Items</a></li>
+                    <li>$0.00</li>
+                    <li> 
+                        <a href="">
+                            <img src="./Images/search-icon.png" alt="" width="20">
+                        </a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="navbar" class="d-flex align-items-center">
+            <div id="logoshift">
+                <img class="logo" src="./Images/logo.png" alt="" width="33">
+                <span id="title">E-Comm</span>
+            </div>
+            <div>
+                <ul id = "home-list">
+                    <li>
+                        <a class="nav active" href="#">HOME</a> 
+                    </li>
+                    <li>
+                        <a class="nav" href="#">BAGS</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="#">SNEAKERS</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="#">BELT</a>
+                    </li>
+                    <li>
+                        <a class="nav" href="#">CONTACT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <section class="last-section">
+    <div id="flex1"> 
+    <div>
+        <img class="logo" src="./Images/logo.png" alt="" width="39">
+        <span id="titleecom">E-Comm</span>
+        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard <br>  dummy text ever.Since the 1500s, when <br> an unknown printer.</p>
+    </div>
+    <div>
+        <h1 id="lastdetails">Follow US</h1>
+        <p>Since the 1500s, when an unknown <br> printer took a galley of type and <br> scrambled.</p>
+    </div>
+    <div>
+        <h1 id="lastdetails"  >Contact Us</h1>
+        <p>E-Comm , 4578 <br> Marmora Road, <br> Glasgow D04 89GR</p>
+    </div>
+    
+</div>
+<ul id="facetwit">
+    <li>
+        <img src="./Images/facebook.png" alt="">
+    </li>
+    <li>
+        <img src="./Images/twitter.png" alt="">
+    </li>
+</ul>
+
+<div id="flex2">
+<div>
+    <p id="lastdetails">Information</p>
+    <p>About Us <br> Information <br> Privacy Policy <br> Terms & Conditions </p>
+</div>
+<div>
+    <p id="lastdetails" >Service</p>
+    <p>About Us <br> Information <br> Privacy Policy <br> Terms & Conditions </p>
+</div>
+<div>
+    <p id="lastdetails" >My Account</p>
+    <p>About Us <br> Information <br> Privacy Policy <br> Terms & Conditions </p>
+</div>
+<div>
+    <p id="lastdetails" >Our Offers</p>
+    <p>About Us <br> Information <br> Privacy Policy <br> Terms & Conditions </p>
+</div>
+
+<div id="copyright">
+    <!-- © 2018 Ecommerce theme by www.bisenbaev.com -->
+    <img src="./Images/payment.png" alt="">
+</div>
+   
+</div>
+</section>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
